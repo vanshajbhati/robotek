@@ -1,5 +1,6 @@
 import 'package:country_code_picker/country_code_picker.dart';
 import 'package:flutter/material.dart';
+import 'package:robotek/Constants.dart';
 import 'package:robotek/colorResource.dart';
 import 'package:robotek/otpVerfication.dart';
 import 'package:robotek/signUp.dart';
@@ -42,9 +43,9 @@ class _EnterYourNumberState extends State<EnterYourNumber> {
 
             children: [
               SizedBox(
-                height: 150,
+                height: 200,
 
-                child: Image.asset('assets/RobotekLogo.png'), ),
+                child: Image.asset('assets/sign-page-abstract-concept-illustration_335657-2242.jpg'), ),
 
 
               Container(
@@ -54,7 +55,7 @@ class _EnterYourNumberState extends State<EnterYourNumber> {
                     Text(
                       'Enter your phone number',textAlign: TextAlign.center,
                       style: TextStyle(
-                          fontSize: 25,
+                          fontSize: 23,
                           fontWeight: FontWeight.bold,
                         color: colorResource.primaryColor2
                       ),
@@ -65,35 +66,15 @@ class _EnterYourNumberState extends State<EnterYourNumber> {
                     Text(
                       'We will send a code (via SMS text message) to your phone number',textAlign: TextAlign.center,
                       style: TextStyle(
-                          fontSize: 18,
+                          fontSize: 15,
                           fontWeight: FontWeight.normal
                       ),
                     ),
 
-                    Text(
-                      'or',textAlign: TextAlign.center,
-                      style: TextStyle(
-                          fontSize: 18,
-                          fontWeight: FontWeight.normal
-                      ),
-                    ),
-                    Padding(
-                      padding: EdgeInsets.all(5),
-                    ),
 
-                    InkWell(
-                      onTap: (){
-                        Navigator.push(context, MaterialPageRoute(builder: (Context)=>SignUpUser()));
-                      },
-                      child: Text(
-                        'Sign Up',textAlign: TextAlign.center,
-                        style: TextStyle(
-                            fontSize: 18,
-                            fontWeight: FontWeight.normal,
-                          color: colorResource.primaryColor3
-                        ),
-                      ),
-                    ),
+
+
+
 
                   ],
                 ),
@@ -172,7 +153,7 @@ class _EnterYourNumberState extends State<EnterYourNumber> {
               InkWell(
                 child: Container(
 
-                  height: 60,
+                  height: 50,
 
                   width: 300,
 
@@ -184,7 +165,7 @@ class _EnterYourNumberState extends State<EnterYourNumber> {
                   child: Center(
                     child: Text('Send OTP',style: TextStyle(
                         color: Colors.white,
-                        fontSize: 22
+                        fontSize: 19
                     ),),
                   ),
                 ),
@@ -204,5 +185,14 @@ class _EnterYourNumberState extends State<EnterYourNumber> {
         ),
       ),
     );
+  }
+
+  void initState() {
+
+    // TODO: implement initState
+    super.initState();
+
+    Constants.dealer = true;
+
   }
 }

@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:robotek/Constants.dart';
 import 'package:robotek/colorResource.dart';
 import 'package:robotek/dealerRegistration.dart';
 
@@ -32,7 +33,7 @@ class _DealerLoginState extends State<DealerLogin> {
       ),
       body:SingleChildScrollView(
         child: Container(
-          height: MediaQuery.of(context).size.height-120,
+
           width: MediaQuery.of(context).size.width,
           child: Column(
             mainAxisAlignment: MainAxisAlignment.spaceAround,
@@ -42,7 +43,7 @@ class _DealerLoginState extends State<DealerLogin> {
               SizedBox(
                 height: 200,
 
-                child: Image.asset('assets/RobotekLogo.png'), ),
+                child: Image.asset('assets/sign-page-abstract-concept-illustration_335657-3875.jpg'), ),
 
 
               Padding(
@@ -144,7 +145,7 @@ class _DealerLoginState extends State<DealerLogin> {
               InkWell(
                 child: Container(
 
-                  height: 60,
+                  height: 50,
 
                   width: 300,
 
@@ -156,7 +157,7 @@ class _DealerLoginState extends State<DealerLogin> {
                   child: Center(
                     child: Text('Login',style: TextStyle(
                         color: Colors.white,
-                        fontSize: 22
+                        fontSize: 20
                     ),),
                   ),
                 ),
@@ -208,5 +209,14 @@ class _DealerLoginState extends State<DealerLogin> {
         ),
       ),
     );
+  }
+
+  void initState() {
+
+    // TODO: implement initState
+    super.initState();
+
+    Constants.dealer = false;
+
   }
 }

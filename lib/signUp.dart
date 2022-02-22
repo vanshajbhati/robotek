@@ -2,6 +2,7 @@ import 'package:dropdown_button2/dropdown_button2.dart';
 import 'package:flutter/material.dart';
 import 'package:robotek/colorResource.dart';
 import 'package:robotek/enterYourNumber.dart';
+import 'package:robotek/home.dart';
 
 class SignUpUser extends StatefulWidget {
   const SignUpUser({Key? key}) : super(key: key);
@@ -17,7 +18,7 @@ class _SignUpUserState extends State<SignUpUser> {
       backgroundColor: Colors.white,
       appBar: PreferredSize(
 
-        preferredSize: Size.fromHeight(30.0),
+        preferredSize: Size.fromHeight(32.0),
         child: AppBar(
           backgroundColor: Colors.transparent,
           elevation: 0,
@@ -80,7 +81,7 @@ class _SignUpUserState extends State<SignUpUser> {
 
       body: SingleChildScrollView(
         child: Container(
-          height: MediaQuery.of(context).size.height-120,
+
           width: MediaQuery.of(context).size.width,
           child: Column(
             mainAxisAlignment: MainAxisAlignment.spaceAround,
@@ -90,7 +91,7 @@ class _SignUpUserState extends State<SignUpUser> {
               SizedBox(
                 height: 200,
 
-                child: Image.asset('assets/RobotekLogo.png'), ),
+                child: Image.asset('assets/istockphoto-1286081871-170667a.png'),  ),
 
 
               Padding(
@@ -102,7 +103,7 @@ class _SignUpUserState extends State<SignUpUser> {
 
               Container(
 
-                  height: 55,
+                  height: 45,
 
                   width: 300,
 
@@ -151,7 +152,7 @@ class _SignUpUserState extends State<SignUpUser> {
 
               Container(
 
-                  height: 55,
+                  height: 45,
 
                   width: 300,
 
@@ -193,7 +194,7 @@ class _SignUpUserState extends State<SignUpUser> {
               ),
               Container(
 
-                  height: 55,
+                  height: 45,
 
                   width: 300,
 
@@ -217,7 +218,7 @@ class _SignUpUserState extends State<SignUpUser> {
 
                         decoration: InputDecoration(
                           border: InputBorder.none,
-                          hintText: "Phone Number",
+                          hintText: "Password",
                         ),
                         onChanged: (value) {
 
@@ -235,7 +236,7 @@ class _SignUpUserState extends State<SignUpUser> {
               ),
               Container(
 
-                  height: 55,
+                  height: 45,
 
                   width: 300,
 
@@ -251,7 +252,7 @@ class _SignUpUserState extends State<SignUpUser> {
                   child:  DropdownButtonHideUnderline(
                     child: DropdownButton2(
                       hint: Text(
-                        'Select Item',
+                        'Gender',
                         style: TextStyle(
                           fontSize: 17,
                           color: Theme
@@ -296,7 +297,7 @@ class _SignUpUserState extends State<SignUpUser> {
               InkWell(
                 child: Container(
 
-                  height: 60,
+                  height: 50,
 
                   width: 300,
 
@@ -306,16 +307,16 @@ class _SignUpUserState extends State<SignUpUser> {
 
                   ),
                   child: Center(
-                    child: Text('Login',style: TextStyle(
+                    child: Text('Submit',style: TextStyle(
                         color: Colors.white,
-                        fontSize: 22
+                        fontSize: 20
                     ),),
                   ),
                 ),
 
 
                 onTap: (){
-                  //   Navigator.push(context, MaterialPageRoute(builder: (Context)=>otpVerification()));
+                  Navigator.push(context, MaterialPageRoute(builder: (Context)=>Home()));
                 },
               ),
 

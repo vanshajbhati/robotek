@@ -21,28 +21,30 @@ class _SelectUserState extends State<SelectUser> {
       body: SingleChildScrollView(
         child: Container(
           width: size.width,
+
           child: Column(
 
+            mainAxisAlignment: MainAxisAlignment.spaceAround,
 
             children: [
               Padding(
-                padding: EdgeInsets.only(top: 60),
+                padding: EdgeInsets.only(top: 20),
               ),
 
               SizedBox(
-                width: 200,
-                height: 200,
+                width: 180,
+                height: 180,
                 child: Image.asset("assets/RobotekLogo.png"),
               ),
               Padding(
-                padding: EdgeInsets.only(top: 30),
+                padding: EdgeInsets.only(top: 40),
               ),
 
               Text(
                 "Choose the type of the user", style: TextStyle(
                   color: Colors.black,
                   fontWeight: FontWeight.bold,
-                  fontSize: 20
+                  fontSize: 17
               ),
               ),
 
@@ -58,27 +60,27 @@ class _SelectUserState extends State<SelectUser> {
                   Navigator.push(context, MaterialPageRoute(builder: (Context)=> EnterYourNumber()));
                 },
                 child: Container(
-                  width: 200,
-                  height: 200,
+                  width: 160,
+                  height: 160,
                   child: Column(
                     children: [
                       Padding(
                         padding: EdgeInsets.only(top: 14),
                       ),
                       SizedBox(
-                        height: 130,
+                        height: 100,
 
-                        child: Image.asset("assets/RobotekLogo.png"),
+                        child: Image.asset("assets/selectUserResaller.png"),
                       ),
                       Container(
-                        height: 50,
-                        width: 200,
+                        height: 40,
+                        width: 160,
 
                         child: Center(
                           child: Text(
                             "RESALER", style: TextStyle(
                             color: Colors.white,
-                            fontSize: 20
+                            fontSize: 15
                           ),
                           ),
                         ),
@@ -108,27 +110,27 @@ class _SelectUserState extends State<SelectUser> {
                     Navigator.push(context, MaterialPageRoute(builder: (Context)=>DealerLogin()));
                 },
                 child: Container(
-                  width: 200,
-                  height: 200,
+                  width: 160,
+                  height: 160,
                   child: Column(
                     children: [
                       Padding(
                         padding: EdgeInsets.only(top: 14),
                       ),
                       SizedBox(
-                        height: 130,
+                        height: 100,
 
-                        child: Image.asset("assets/RobotekLogo.png"),
+                        child: Image.asset("assets/selectUserDealer.png"),
                       ),
                       Container(
-                        height: 50,
-                        width: 200,
+                        height: 40,
+                        width: 160,
 
                         child: Center(
                           child: Text(
                             "DEALER", style: TextStyle(
                               color: Colors.white,
-                              fontSize: 20
+                              fontSize: 15
                           ),
                           ),
                         ),

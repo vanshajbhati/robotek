@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:pin_code_fields/pin_code_fields.dart';
 import 'package:robotek/colorResource.dart';
 import 'package:robotek/home.dart';
+import 'package:robotek/signUp.dart';
 
 
 class otpVerification extends StatefulWidget {
@@ -45,9 +46,9 @@ width: MediaQuery.of(context).size.width,
             mainAxisAlignment: MainAxisAlignment.spaceAround,
             children: [
               SizedBox(
-                height: 150,
+                height: 250,
 
-                child: Image.asset('assets/RobotekLogo.png'), ),
+                child: Image.asset('assets/enter-otp-concept-illustration_114360-7887.jpg'), ),
 
               Container(
                 width: 320,
@@ -79,7 +80,7 @@ width: MediaQuery.of(context).size.width,
 
 
             Container(
-              width: 300,
+              width: 250,
               child: PinCodeTextField(
                 appContext: context,
                 pastedTextStyle: TextStyle(
@@ -158,7 +159,7 @@ width: MediaQuery.of(context).size.width,
               InkWell(
 
                 child: Container(
-                  height: 60,
+                  height: 50,
                   width: 300,
 
 
@@ -170,13 +171,15 @@ width: MediaQuery.of(context).size.width,
                   child: Center(
                     child: Text('Submit',style: TextStyle(
                         color: Colors.white,
-                        fontSize: 22
+                        fontSize: 20
                     ),),
                   ),
                 ),
 
                 onTap: (){
-                  Navigator.push(context, MaterialPageRoute(builder: (Context)=>Home()));
+
+                  Navigator.push(context, MaterialPageRoute(builder: (Context)=>SignUpUser()));
+
                 },
               ),
 

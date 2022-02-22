@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:robotek/colorResource.dart';
 import 'package:robotek/dealerLogin.dart';
+import 'package:robotek/home.dart';
 
 class DealerRegistration extends StatefulWidget {
   const DealerRegistration({Key? key}) : super(key: key);
@@ -181,7 +182,7 @@ class _DealerRegistrationState extends State<DealerRegistration> {
 
                             child: CircleAvatar(
                                 radius: 100,
-                                child: Image.network("https://freepikpsd.com/file/2019/10/person-vector-png-1-Transparent-Images.png")), ),
+                                child: Image.asset("assets/businessMale.png") ),),
                         ),
                       ],
                     ),
@@ -363,7 +364,7 @@ class _DealerRegistrationState extends State<DealerRegistration> {
               InkWell(
                 child: Container(
 
-                  height: 60,
+                  height: 50,
 
                   width: 300,
 
@@ -375,14 +376,14 @@ class _DealerRegistrationState extends State<DealerRegistration> {
                   child: Center(
                     child: Text('Login',style: TextStyle(
                         color: Colors.white,
-                        fontSize: 22
+                        fontSize: 20
                     ),),
                   ),
                 ),
 
 
                 onTap: (){
-                  //   Navigator.push(context, MaterialPageRoute(builder: (Context)=>otpVerification()));
+                    Navigator.push(context, MaterialPageRoute(builder: (Context)=>Home()));
                 },
               ),
 
